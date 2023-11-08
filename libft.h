@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/08 11:54:48 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:18:37 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,8 @@ ft_strlen(const char *s);
 
 char
 *ft_strchr(const char *s, int c);
+
+char
+*ft_strrchr(const char *s, int c);
 
 #endif

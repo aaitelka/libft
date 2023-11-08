@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 10:40:44 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/08 11:47:20 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:42:11 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
-	{
-		if (*s == c)
-			return ((char *)s);
+	while (*s && *s != c)
 		s++;
-	}
-	if (c == '\0')
+	if (*s == c)
 		return ((char *)s);
 	return (NULL);
 }
