@@ -1,0 +1,8 @@
+*.a
+main.c
+*.o
+*.out
+*.txt
+*.cmake
+cmake_*
+/*/*
