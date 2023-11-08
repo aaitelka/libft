@@ -1,16 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 14:39:08 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/08 01:40:23 by halem            ###   ########.fr       */
+/*   Created: 2023/11/07 14:44:00 by aaitelka          #+#    #+#             */
+/*   Updated: 2023/11/07 15:05:21 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
-	return (c >= 32 && c <= 126);
+	size_t	len;
+
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
 }
