@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/08 12:54:48 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/08 13:12:22 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,8 @@ char
 
 int
 ft_strncmp(const char *s1, const char *s2, size_t n);
+
+size_t
+ft_strlcpy(char *dst, const char *src, size_t dstsize);
+
 #endif
