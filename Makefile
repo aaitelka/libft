@@ -6,7 +6,7 @@
 #    By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/07 23:45:40 by aaitelka          #+#    #+#              #
-#    Updated: 2023/11/08 16:35:06 by aaitelka         ###   ########.fr        #
+#    Updated: 2023/11/09 10:08:48 by aaitelka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,8 +30,8 @@ SRCS	=	ft_isalpha.c \
 			ft_strncmp.c \
 			ft_strlcpy.c \
 			ft_memset.c \
-			ft_bzero.c
-			#ft_memcpy.c \
+			ft_bzero.c \
+			ft_memcpy.c \
 			#ft_memmove.c \
 			#ft_toupper.c \
 			#ft_tolower.c 
