@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/09 10:57:18 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:09:45 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,8 @@ void
 
 void
 *ft_memchr(const void *s, int c, size_t n);
+
+int
+ft_memcmp(const void *s1, const void *s2, size_t n);
+
 #endif
