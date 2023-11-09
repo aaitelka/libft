@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/09 10:09:32 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/09 10:57:18 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,6 @@ ft_bzero(void *s, size_t n);
 void
 *ft_memcpy(void *dst, const void *src, size_t n);
 
+void
+*ft_memchr(const void *s, int c, size_t n);
 #endif
