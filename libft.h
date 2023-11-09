@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/09 11:09:45 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:26:56 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,4 +71,6 @@ void
 int
 ft_memcmp(const void *s1, const void *s2, size_t n);
 
+void
+*ft_memmove(void *dst, const void *src, size_t len);
 #endif
