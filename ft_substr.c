@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 17:43:20 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/10 18:19:59 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/10 18:24:29 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return ((char *)s);
 	slen = ft_strlen(s);
 	if (start >= slen)
-		return ft_strdup("");
+		return (ft_strdup(""));
 	str = malloc(len + 1);
 	if (!str)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 17:27:45 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/10 17:37:39 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/10 18:24:04 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strdup(const char *s1)
 {
-	size_t len;
+	size_t	len;
 	char	*str;
 
 	len = ft_strlen(s1);

@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 15:29:24 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/10 15:34:50 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/10 18:23:29 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ int	ft_atoi(const char *str)
 	{
 		sign = -1;
 		str++;
-	} else if (*str == '+')
+	}
+	else if (*str == '+')
 		str++;
 	while (ft_isdigit(*str))
 	{
