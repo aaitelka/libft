@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/09 12:26:56 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/10 11:45:27 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <string.h>
+
 /**
  *	Part 0ne.
  * */
@@ -73,4 +75,7 @@ ft_memcmp(const void *s1, const void *s2, size_t n);
 
 void
 *ft_memmove(void *dst, const void *src, size_t len);
+
+size_t
+ft_strlcat(char *dst, const char *src, size_t dstsize);
 #endif
