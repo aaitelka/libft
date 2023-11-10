@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/10 11:45:27 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/10 14:15:54 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,4 +78,7 @@ void
 
 size_t
 ft_strlcat(char *dst, const char *src, size_t dstsize);
+
+char
+*ft_strnstr(const char *haystack, const char *needle, size_t len);
 #endif
