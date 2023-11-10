@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/10 14:15:54 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/10 15:40:27 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <stdbool.h>
 # include <string.h>
 
 /**
@@ -81,4 +82,8 @@ ft_strlcat(char *dst, const char *src, size_t dstsize);
 
 char
 *ft_strnstr(const char *haystack, const char *needle, size_t len);
+
+int
+ft_atoi(const char *str);
+
 #endif
