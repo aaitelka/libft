@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/10 17:43:10 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/10 18:27:14 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,5 +94,8 @@ char
 
 char
 *ft_substr(char const *s, unsigned int start, size_t len);
+
+char
+*ft_strjoin(char const *s1, char const *s2);
 
 #endif
