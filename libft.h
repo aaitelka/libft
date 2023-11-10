@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/10 15:59:40 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/10 17:28:33 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,4 +88,8 @@ ft_atoi(const char *str);
 
 void
 *ft_calloc(size_t count, size_t size);
+
+char
+*ft_strdup(const char *s1);
+
 #endif
