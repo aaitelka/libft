@@ -6,7 +6,7 @@
 #    By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/07 23:45:40 by aaitelka          #+#    #+#              #
-#    Updated: 2023/11/10 20:00:05 by aaitelka         ###   ########.fr        #
+#    Updated: 2023/11/10 20:19:33 by aaitelka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ SRCS	=	ft_isalpha.c \
 			ft_substr.c \
 			ft_strjoin.c \
 			ft_strtrim.c \
+			ft_split.c \
 #BONUS	=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
