@@ -6,13 +6,14 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/11 20:09:24 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/11 20:33:41 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <unistd.h>
 # include <stddef.h>
 # include <stdlib.h>
 # include <stdio.h>
@@ -109,5 +110,8 @@ char
 
 char
 *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+void
+ft_putchar_fd(char c, int fd);
 
 #endif
