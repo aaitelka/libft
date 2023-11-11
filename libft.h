@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/11 17:46:21 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/11 20:09:24 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,4 +106,8 @@ char
 
 char
 *ft_itoa(int n);
+
+char
+*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
 #endif
