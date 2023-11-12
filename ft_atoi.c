@@ -6,13 +6,13 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 15:29:24 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/10 18:23:29 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 15:21:04 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static bool	is_space(int c)
+static int	is_space(int c)
 {
 	return (c == 32 || (c >= 9 && c <= 13));
 }

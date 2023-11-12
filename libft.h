@@ -6,17 +6,15 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 14:47:06 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 15:20:29 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
+# include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
-# include <stdbool.h>
 # include <string.h>
 
 /**
@@ -112,5 +110,8 @@ char
 
 void
 ft_striteri(char *s, void (*f)(unsigned int, char*));
+
+void
+ft_putchar_fd(char c, int fd);
 
 #endif
