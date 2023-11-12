@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 22:54:42 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 23:12:27 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 23:14:53 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
+
 	if (!lst || !del)
 		return ;
 	while (*lst)
