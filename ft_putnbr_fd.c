@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 15:42:45 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 15:50:49 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 15:57:09 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ static void	putnbr(long nb, int fd)
 	else
 		ft_putchar_fd(nb + '0', fd);
 }
-
 
 void	ft_putnbr_fd(int n, int fd)
 {
