@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 15:49:31 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 16:08:29 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,5 +122,14 @@ ft_putendl(char *s, int fd);
 
 void
 ft_putnbr_fd(int n, int fd);
+
+typedef struct		s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+
+t_list
+*ft_lstnew(void *content);
 
 #endif

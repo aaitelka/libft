@@ -6,7 +6,7 @@
 #    By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/07 23:45:40 by aaitelka          #+#    #+#              #
-#    Updated: 2023/11/12 15:48:29 by aaitelka         ###   ########.fr        #
+#    Updated: 2023/11/12 16:55:06 by aaitelka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,23 +48,29 @@ SRCS	:=	ft_isalpha.c \
 			ft_putchar_fd.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
-			ft_putnbr_fd.c \
-#BONUS	=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+			ft_putnbr_fd.c 
+BONUS	:=	ft_lstnew_bonus.c \
+			#ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
+			#ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
-#B_OBJS	=	$(BONUS:.c=.o)
+B_OBJS	=	$(BONUS:.c=.o)
 
 OBJS	:=	$(SRCS:.c=.o)
 
-all		:	$(NAME)
+all			:	$(NAME)
 
-$(NAME)	:	$(OBJS) #$(B_OBJS)
+$(NAME)		:	$(OBJS) #$(B_OBJS)
 	$(AR) $(NAME) $(OBJS) #$(B_OBJS)
 
-clean	:
-	$(RM) $(OBJS) #$(B_OBJS)
+bonus	: $(B_OBJS)
+	$(AR) $(NAME) $(B_OBJS)
 
-fclean	:	clean
+#$(B_OBJS)		: $(BONUS)
+#	$(CC) $(CFLAGS) -c $(BONUS)
+clean		:
+	$(RM) $(OBJS) $(B_OBJS)
+
+fclean		:	clean
 	$(RM) $(NAME)
 
-re		:	fclean $(NAME)
+re			:	fclean $(NAME)
