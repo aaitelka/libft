@@ -6,7 +6,7 @@
 #    By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/07 23:45:40 by aaitelka          #+#    #+#              #
-#    Updated: 2023/11/12 15:17:47 by aaitelka         ###   ########.fr        #
+#    Updated: 2023/11/12 15:29:26 by aaitelka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,7 @@ SRCS	:=	ft_isalpha.c \
 			ft_strmapi.c \
 			ft_striteri.c \
 			ft_putchar_fd.c \
+			ft_putstr_fd.c \
 #BONUS	=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
