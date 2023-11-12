@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 15:30:04 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 15:49:31 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,5 +116,11 @@ ft_putchar_fd(char c, int fd);
 
 void
 ft_putstr_fd(char *s, int fd);
+
+void
+ft_putendl(char *s, int fd);
+
+void
+ft_putnbr_fd(int n, int fd);
 
 #endif
