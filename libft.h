@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 14:42:09 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 14:47:06 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,5 +109,8 @@ char
 
 char
 *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+void
+ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif

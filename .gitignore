@@ -4,5 +4,6 @@ main.c
 *.out
 *.txt
 *.cmake
+.DSStore
 cmake_*
 /*/*
