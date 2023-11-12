@@ -6,13 +6,13 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 16:05:29 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 16:11:47 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 18:48:17 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
 	t_list	*list;
 

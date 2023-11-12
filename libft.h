@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 18:34:33 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 18:50:15 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,5 +140,8 @@ ft_lstsize(t_list *lst);
 
 t_list
 *ft_lstlast(t_list *lst);
+
+void
+ft_lstadd_back(t_list **lst, t_list *new);
 
 #endif
