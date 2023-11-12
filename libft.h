@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 14:17:37 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 14:24:14 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,5 +103,8 @@ char
 
 char
 **ft_split(char const *s, char c);
+
+char
+*ft_itoa(int n);
 
 #endif
