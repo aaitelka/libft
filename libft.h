@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 22:59:55 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/12 23:21:49 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -149,5 +149,8 @@ ft_lstdelone(t_list *lst, void (*del)(void*));
 
 void
 ft_lstclear(t_list **lst, void (*del)(void*));
+
+void
+ft_lstiter(t_list *lst, void (*f)(void *));
 
 #endif
