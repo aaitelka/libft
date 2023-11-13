@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 23:18:09 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 23:21:49 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:20:55 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,7 +123,7 @@ ft_putendl(char *s, int fd);
 void
 ft_putnbr_fd(int n, int fd);
 
-typedef struct		s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
@@ -152,5 +152,8 @@ ft_lstclear(t_list **lst, void (*del)(void*));
 
 void
 ft_lstiter(t_list *lst, void (*f)(void *));
+
+t_list
+*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif
