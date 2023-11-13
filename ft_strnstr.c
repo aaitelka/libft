@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 14:06:31 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/13 11:37:53 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:07:48 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		if (ft_strncmp(haystack, needle, needle_len) == 0)
 			return ((char *)haystack);
 		haystack++;
-		}
+	}
 	return (NULL);
 }
