@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:53:14 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/10 14:03:44 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/13 15:25:48 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	srclen;
 	size_t	dstlen;
 
-	srclen = strlen(src);
-	dstlen = strlen(dst);
+	srclen = ft_strlen(src);
+	dstlen = ft_strlen(dst);
 	dsize = dstlen;
 	if (dstsize < dstlen)
 		return (dstsize + srclen);

@@ -6,15 +6,16 @@
 #    By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/07 23:45:40 by aaitelka          #+#    #+#              #
-#    Updated: 2023/11/13 10:42:21 by aaitelka         ###   ########.fr        #
+#    Updated: 2023/11/13 15:59:58 by aaitelka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	:= libft.a
-CC		:= cc
-CFLAGS	:= -Wall -Wextra -Werror
-AR		:= ar rcs
-RM		:= rm -f
+NAME	:=	libft.a
+HEAD	:= 	libft.h
+CC		:=	cc
+CFLAGS	:=	-Wall -Wextra -Werror
+AR		:=	ar rcs
+RM		:=	rm -f
 SRCS	:=	ft_isalpha.c \
 			ft_isdigit.c \
 			ft_isalnum.c \
@@ -59,24 +60,25 @@ BONUS	:=	ft_lstnew_bonus.c \
 			ft_lstiter_bonus.c \
 			ft_lstmap_bonus.c \
 
-B_OBJS	=	$(BONUS:.c=.o)
+OBJS	:=	$(SRCS:%c=%o)
 
-OBJS	:=	$(SRCS:.c=.o)
+B_OBJS	:=	$(BONUS:%c=%o)
 
-all			:	$(NAME)
+all		:	$(NAME)
 
-$(NAME)		:	$(OBJS) #$(B_OBJS)
-	$(AR) $(NAME) $(OBJS) #$(B_OBJS)
+%o		:	%c $(HEAD)
+			$(CC) $(CFLAGS) -c -o $@ $<
 
-bonus	: $(B_OBJS)
-	$(AR) $(NAME) $(B_OBJS)
+$(NAME)	:	$(OBJS)
+			$(AR) $(NAME) $(OBJS)
 
-#$(B_OBJS)		: $(BONUS)
-#	$(CC) $(CFLAGS) -c $(BONUS)
-clean		:
-	$(RM) $(OBJS) $(B_OBJS)
+bonus	:	$(B_OBJS)
+			$(AR) $(NAME) $(B_OBJS)
 
-fclean		:	clean
-	$(RM) $(NAME)
+clean	:
+			$(RM) $(OBJS) $(B_OBJS)
 
-re			:	fclean $(NAME)
+fclean	:	clean
+			$(RM) $(NAME)
+
+re		:	fclean all

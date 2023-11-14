@@ -6,15 +6,15 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 20:18:35 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 14:20:24 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:14:19 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int count_words(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
-	static int count;
+	static int	count;
 
 	count = 0;
 	while (*s)
@@ -29,16 +29,16 @@ static int count_words(const char *s, char c)
 	return (count);
 }
 
-char **ft_split(const char *s, char c)
+char	**ft_split(const char *s, char c)
 {
-	char **splited;
-	char *trimmed;
-	char **str_arr;
-	int arr_size;
+	char	**splited;
+	char	*trimmed;
+	char	**str_arr;
+	int		arr_size;
 
 	if (!s)
 		return (NULL);
-	trimmed = ft_strtrim(s, &c); /**TODO fix this line*/
+	trimmed = ft_strtrim(s, &c);
 	if (!trimmed)
 		return (NULL);
 	arr_size = count_words(trimmed, c);
@@ -53,7 +53,7 @@ char **ft_split(const char *s, char c)
 			trimmed++;
 		while (*trimmed && *trimmed == c)
 		{
-			*trimmed = '\0';	
+			*trimmed = '\0';
 			trimmed++;
 		}
 		splited++;
