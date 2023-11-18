@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 15:26:22 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/12 15:32:30 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/17 12:13:27 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!s)
+	if (!s || fd < 0)
 		return ;
 	while (*s)
 		ft_putchar_fd(*s++, fd);

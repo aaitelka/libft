@@ -6,11 +6,9 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 15:50:42 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/08 02:54:36 by halem            ###   ########.fr       */
+/*   Updated: 2023/11/17 18:25:40 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 static int	ft_isupper(int c)
 {
