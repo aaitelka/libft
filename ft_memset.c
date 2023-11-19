@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 15:14:07 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/17 14:14:27 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/18 16:01:35 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*s;
+	unsigned char	*s;
 
-	s = (char *)b;
+	s = (unsigned char *)b;
 	while (len--)
-	{
-		*s = (unsigned char) c;
-		s++;
-	}
+		*s++ = (unsigned char)c;
 	return (b);
 }

@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:25:03 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/17 18:20:07 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/18 16:02:21 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*p;
-
-	p = (char *)s;
-	while (n--)
-		*p++ = 0;
+	ft_memset(s, 0, n);
 }

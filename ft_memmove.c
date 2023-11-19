@@ -6,7 +6,7 @@
 /*   By: aaitelka <aaitelka@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:08:01 by aaitelka          #+#    #+#             */
-/*   Updated: 2023/11/09 15:37:32 by aaitelka         ###   ########.fr       */
+/*   Updated: 2023/11/18 22:17:35 by aaitelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*cdst;
-	char	*csrc;
+	unsigned char	*source;
+	unsigned char	*destination;
 
-	cdst = (char *)dst;
-	csrc = (char *)src;
-	if (csrc < cdst)
+	if (dst == src)
+		return (dst);
+	source = (unsigned char *)src;
+	destination = (unsigned char *)dst;
+	if (source < destination)
 		while (len--)
-			cdst[len] = csrc[len];
+			destination[len] = source[len];
 	else
 		ft_memcpy(dst, src, len);
 	return (dst);
